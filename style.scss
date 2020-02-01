@@ -67,14 +67,14 @@ section.spacer{
 .header{
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 50%;
   .moon, .sun{
     width: 34px;
-    cursor: pointer;
-    transition: .5s all ease-in-out;
+    cursor:crosshair;
+    transition: 1s all ease-in-out;
   }
   .sun:hover{
-    animation: sun_rotate 1s infinite;
+    animation: sun_rotate 2s infinite;
   }
   .moon:hover{
     transform: scale(1.1);
@@ -276,7 +276,7 @@ nav {
   }
 }
 
-// Page content 
+// page content
 article {
   max-width: $content-width;
   margin: 0 auto;
@@ -309,7 +309,7 @@ div.animate {
     color: var(--primary-color);
     font-size:20pt;
     @include small{
-      font-size: 10pt;
+      font-size: 11pt;
     }
   }
   span {
