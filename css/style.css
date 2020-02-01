@@ -355,7 +355,7 @@ nav ul li ul li a {
 .birdcontent {
   margin-top: 70px;
   z-index: 1;
-  width: 100%;
+  width: 100rem;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -372,8 +372,14 @@ nav ul li ul li a {
   background-image: linear-gradient(to bottom, rgba(3, 3, 3, 0.6) 0%, rgba(255, 115, 0, 0.87) 100%), url("../img/spira.jpg");
   background-blend-mode: darken;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   padding: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .birdcontent {
+    width: 90%;
+  }
 }
 
 .bird {
