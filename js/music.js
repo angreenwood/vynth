@@ -79,6 +79,7 @@
   function onWindowLoad() {
     play.on('click', function() {
       playSound(sound);
+      sound.play();
     });
   }
 
