@@ -50,6 +50,13 @@ section.spacer{
     color: var(--primary-color);
     font-family: "Dosis",sans-serif;
     font-size: 18pt;
+    text-align:left;
+    width:50%;
+    margin:auto;
+    line-height: 10mm;
+    @include small{
+      width:95%;
+    }
   }
   .map{
     width:100%;
@@ -74,6 +81,20 @@ section.spacer{
   }
   .hide{
     display: none;
+  }
+
+  p.nightmode{
+    position:absolute;
+    bottom:-20%;
+    left:120%;
+    font-size:12pt;
+  }
+  p.daymode{
+    position:absolute;
+    bottom:-20%;
+    left:120%;
+    font-size:12pt;
+    color:white;
   }
 }
 
@@ -262,8 +283,8 @@ article {
   padding: 10px;
 }
 .bodyimg{
-  width:25%;
-  margin:auto;
+  width:35%;
+  margin:50px auto 50px auto;
   border: 3px lightslategrey solid;
   @include small{
     width:90%;

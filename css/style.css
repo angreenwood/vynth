@@ -57,6 +57,16 @@ section.spacer {
   color: var(--primary-color);
   font-family: "Dosis",sans-serif;
   font-size: 18pt;
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  line-height: 10mm;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container .content p {
+    width: 95%;
+  }
 }
 
 .container .map {
@@ -88,6 +98,21 @@ section.spacer {
 
 .header .hide {
   display: none;
+}
+
+.header p.nightmode {
+  position: absolute;
+  bottom: -20%;
+  left: 120%;
+  font-size: 12pt;
+}
+
+.header p.daymode {
+  position: absolute;
+  bottom: -20%;
+  left: 120%;
+  font-size: 12pt;
+  color: white;
 }
 
 @-webkit-keyframes sun_rotate {
@@ -290,8 +315,8 @@ article {
 }
 
 .bodyimg {
-  width: 25%;
-  margin: auto;
+  width: 35%;
+  margin: 50px auto 50px auto;
   border: 3px lightslategrey solid;
 }
 
