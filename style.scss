@@ -32,6 +32,7 @@ section.spacer{
 .container{
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -40,6 +41,41 @@ section.spacer{
   margin:auto;
   .content{
     margin-top:50px;
+  }
+  a {
+    color: var(--primary-color);
+    animation: move 3s;
+    -webkit-animation: move 3s;
+    text-decoration: none;
+    font-size:20pt;
+    margin-top:20px;
+    padding:20pt;
+    border:3px var(--primary-color) solid;
+    border-radius: 15px;
+  }
+  
+  @keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+              
+  @-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
   .content h1{
     color: var(--primary-color);

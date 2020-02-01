@@ -30,6 +30,10 @@ section.spacer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -44,6 +48,40 @@ section.spacer {
 
 .container .content {
   margin-top: 50px;
+}
+
+.container a {
+  color: var(--primary-color);
+  animation: move 3s;
+  -webkit-animation: move 3s;
+  text-decoration: none;
+  font-size: 20pt;
+  margin-top: 20px;
+  padding: 20pt;
+  border: 3px var(--primary-color) solid;
+  border-radius: 15px;
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .container .content h1 {

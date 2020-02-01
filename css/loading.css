@@ -1,0 +1,118 @@
+::-moz-selection {
+  color: #181818;
+  background: #3cfd2a;
+}
+
+::selection {
+  color: #181818;
+  background: #3cfd2a;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #181818;
+  color: #3cfd2a;
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+.container {
+  max-width: 64em;
+  padding: 1.5em;
+  margin: 0 auto;
+  height: 100%;
+}
+
+canvas.playing:hover {
+  cursor: none;
+}
+
+.controls {
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+.controls.loading {
+  opacity: 0.7;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+header .not-supported {
+  background: #3cfd2a;
+  color: #181818;
+  padding: 10px 0;
+  text-indent: 10px;
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  color: #3cfd2a;
+  background: #181818;
+  font-size: 2em;
+  padding: 0.5em;
+  -webkit-box-shadow: 0px 6px 0px black, 0px 6px 25px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 6px 0px black, 0px 6px 25px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.button:active {
+  -webkit-box-shadow: 0px 3px 0px black, 0px 3px 6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 3px 0px black, 0px 3px 6px rgba(0, 0, 0, 0.7);
+  top: 6px;
+}
+
+.button + .button {
+  margin-left: 0.33em;
+}
+
+.status {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+#audio-status:before, #audio-status:after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+}
+
+span.loading, span.ready {
+  -webkit-animation: loading 0.5s infinite alternate;
+          animation: loading 0.5s infinite alternate;
+}
+
+@-webkit-keyframes loading {
+  from {
+    background: #3cfd2a;
+    color: #181818;
+  }
+  to {
+    background: #181818;
+    color: #3cfd2a;
+  }
+}
+
+@keyframes loading {
+  from {
+    background: #3cfd2a;
+    color: #181818;
+  }
+  to {
+    background: #181818;
+    color: #3cfd2a;
+  }
+}
