@@ -7,7 +7,7 @@
 
   function onDocumentReady() {
     win = $(window);
-    soundUrl = '../mp3/good.mp3';
+    soundUrl = 'mp3/good.mp3';
     notSupported = document.getElementById('not-supported');
     audioStatus = document.getElementById('audio-status');
     controls = $(document.getElementById('controls'));
@@ -164,5 +164,4 @@
   }
 
   $(onDocumentReady);
-  $('playSound(sound)')[0].play();
 })(jQuery);
