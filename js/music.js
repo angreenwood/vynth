@@ -5,6 +5,7 @@
     notSupported, canvas,
     analyser, stream, controls;
 
+
   function onDocumentReady() {
     win = $(window);
     soundUrl = 'mp3/good.m4v';
@@ -22,6 +23,7 @@
       win.on('load', function() {
         play.on('click', function() {
           playSound(sound);
+          sound.play();
         });
 
         stop.on("click", stopSound);
