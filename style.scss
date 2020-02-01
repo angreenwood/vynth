@@ -5,6 +5,14 @@
 }
 // Darkmode Selector
 :root {
+  --primary-color: #1B1E24;
+  --secondary-color: #1B1E24;
+  --font-color: #1B1E24;
+  --bg-color: #fff;
+  --heading-color: #1B1E24;
+}
+
+[data-theme="dark"] {
   --primary-color: #fff;
   --secondary-color: #fff;
   --font-color: #fff;
@@ -12,13 +20,6 @@
   --heading-color: #fff;
 }
 
-[data-theme="dark"] {
-  --primary-color: #1B1E24;
-  --secondary-color: #1B1E24;
-  --font-color: #1B1E24;
-  --bg-color: #fff;
-  --heading-color: #1B1E24;
-}
 
 body {
   background-color: var(--bg-color);
@@ -88,14 +89,13 @@ section.spacer{
     bottom:-20%;
     left:120%;
     font-size:12pt;
-    color:white;
   }
   p.daymode{
     position:absolute;
     bottom:-20%;
     left:120%;
     font-size:12pt;
-    color:black;
+    color:white;
   }
 }
 
