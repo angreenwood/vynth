@@ -197,6 +197,7 @@ section.spacer {
 .brand a:visited {
   color: #ffffff;
   text-decoration: none;
+  font-size: 15pt;
 }
 
 .nav-container {
@@ -227,6 +228,7 @@ nav ul li a:visited {
   background: #262626;
   color: #ffffff;
   text-decoration: none;
+  font-size: 15pt;
 }
 
 nav ul li a:hover,

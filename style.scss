@@ -179,6 +179,7 @@ $link-hover-color: #2581DC;
   a:visited {
     color: $nav-font-color;
     text-decoration: none;
+    font-size: 15pt;
   }
 }
 
@@ -206,6 +207,7 @@ nav {
         background: $nav-background;
         color: $nav-font-color;
         text-decoration: none;
+        font-size: 15pt;
         &:hover {
           background: $link-hover-color;
           color: $nav-font-color;
