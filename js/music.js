@@ -23,7 +23,6 @@
       win.on('load', function() {
         play.on('click', function() {
           playSound(sound);
-          sound.play();
         });
 
         stop.on("click", stopSound);
@@ -79,7 +78,6 @@
   function onWindowLoad() {
     play.on('click', function() {
       playSound(sound);
-      sound.play();
     });
   }
 

@@ -6,6 +6,11 @@ $colors: (
   element-bg: skyblue
 );
 
+@mixin small {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
 
 
 @function color($key) {
@@ -50,6 +55,12 @@ canvas {
   &.playing:hover {
     cursor: none;
   }
+@include small{
+  width:90%;
+  display:flex;
+  justify-content: center;
+  margin:auto;
+}
 }
 
 .controls {
@@ -91,6 +102,10 @@ header {
   
   & + & {
     margin-left:0.33em;
+  }
+  @include small{
+    width:90%;
+    margin:auto;
   }
 }
 
