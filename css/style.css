@@ -288,3 +288,15 @@ article {
   margin: 0 auto;
   padding: 10px;
 }
+
+.bodyimg {
+  width: 25%;
+  margin: auto;
+  border: 3px lightslategrey solid;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bodyimg {
+    width: 90%;
+  }
+}

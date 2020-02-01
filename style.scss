@@ -1,3 +1,8 @@
+@mixin small {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
 // Darkmode Selector
 :root {
   --primary-color: #1B1E24;
@@ -255,5 +260,13 @@ article {
   max-width: $content-width;
   margin: 0 auto;
   padding: 10px;
+}
+.bodyimg{
+  width:25%;
+  margin:auto;
+  border: 3px lightslategrey solid;
+  @include small{
+    width:90%;
+  }
 }
 // end navbar
