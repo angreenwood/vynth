@@ -7,7 +7,7 @@
 
   function onDocumentReady() {
     win = $(window);
-    soundUrl = 'mp3/good.mp3';
+    soundUrl = 'mp3/good.m4v';
     notSupported = document.getElementById('not-supported');
     audioStatus = document.getElementById('audio-status');
     controls = $(document.getElementById('controls'));
