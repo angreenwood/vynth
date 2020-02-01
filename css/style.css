@@ -1,18 +1,18 @@
 @charset "UTF-8";
 :root {
-  --primary-color: #1B1E24;
-  --secondary-color: #1B1E24;
-  --font-color: #1B1E24;
-  --bg-color: #fff;
-  --heading-color: #1B1E24;
-}
-
-[data-theme="dark"] {
   --primary-color: #fff;
   --secondary-color: #fff;
   --font-color: #fff;
   --bg-color: #1B1E24;
   --heading-color: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #1B1E24;
+  --secondary-color: #1B1E24;
+  --font-color: #1B1E24;
+  --bg-color: #fff;
+  --heading-color: #1B1E24;
 }
 
 body {
@@ -105,6 +105,7 @@ section.spacer {
   bottom: -20%;
   left: 120%;
   font-size: 12pt;
+  color: white;
 }
 
 .header p.daymode {
@@ -112,7 +113,7 @@ section.spacer {
   bottom: -20%;
   left: 120%;
   font-size: 12pt;
-  color: white;
+  color: black;
 }
 
 @-webkit-keyframes sun_rotate {
@@ -309,6 +310,7 @@ nav ul li ul li a {
 }
 
 .birdcontent {
+  margin-top: 70px;
   z-index: 1;
   width: 100%;
   position: relative;
