@@ -308,7 +308,7 @@ nav ul li ul li a {
           transform: rotate(-45deg);
 }
 
-.content {
+.birdcontent {
   z-index: 1;
   width: 100%;
   position: relative;
