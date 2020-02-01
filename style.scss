@@ -530,14 +530,14 @@ div.animate {
 
 /* Clip Background Image */
 
-	  background: url(../img/Harvey.jpg) repeat-y;
+	  background: url(../img/textfill.png) repeat-y;
 	  -webkit-background-clip: text;
 	  background-clip: text;
 
 /* Animate Background Image */
 
 	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 10s linear infinite;
+	  -webkit-animation: aitf 50s linear 1;
 
 /* Activate hardware acceleration for smoother animations */
 
