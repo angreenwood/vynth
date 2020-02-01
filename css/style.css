@@ -324,9 +324,9 @@ nav ul li ul li a {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 35rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 168, 76, 0.6)), to(rgba(255, 123, 13, 0.6))), url("https://images.unsplash.com/photo-1446824505046-e43605ffb17f");
-  background-image: linear-gradient(to bottom, rgba(255, 168, 76, 0.6) 0%, rgba(255, 123, 13, 0.6) 100%), url("https://images.unsplash.com/photo-1446824505046-e43605ffb17f");
-  background-blend-mode: soft-light;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0.6)), to(rgba(255, 115, 0, 0.87))), url("../img/spira.jpg");
+  background-image: linear-gradient(to bottom, rgba(3, 3, 3, 0.6) 0%, rgba(255, 115, 0, 0.87) 100%), url("../img/spira.jpg");
+  background-blend-mode: darken;
   background-size: cover;
   background-position: center center;
   padding: 2rem;
@@ -601,21 +601,22 @@ div.animate {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  border: 4px double rgba(255, 255, 255, 0.25);
+  border: 4px double rgba(255, 255, 255, 0.671);
   border-width: 4px 0;
   padding: 1.5em 0em;
   width: auto;
   margin: 20px auto 20px auto;
+  z-index: 10;
 }
 
 div.animate h4 {
-  color: #262626;
+  color: #f8f8f8;
   font-size: 20pt;
 }
 
 @media only screen and (max-width: 1024px) {
   div.animate h4 {
-    font-size: 10pt;
+    font-size: 18pt;
   }
 }
 
@@ -626,12 +627,12 @@ div.animate span {
   margin: auto;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   /* Clip Background Image */
-  background: url(https://images.pexels.com/photos/2726986/pexels-photo-2726986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) repeat-y;
+  background: url(../img/Harvey.jpg) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   /* Animate Background Image */
   -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
+  -webkit-animation: aitf 10s linear infinite;
   /* Activate hardware acceleration for smoother animations */
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
